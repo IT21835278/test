@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Objects</h2>
+        <!--In JavaScript, an object is a standalone entity, with properties 
+        and type.-->
+        <p id="demo"></p>
+
+        <script>
+            const Animal ={
+                type:"Invertebrates",
+                displaytype(){
+                    console.log(this.type);
+                }
+            }
+
+            const animal1 = Object.create(Animal);
+            animal1.displaytype();
+
+            const fish =Object.create(Animal);
+            fish.type="Fishes";
+            fish.displaytype();
+
+        </script>
+    </body>
+</html>

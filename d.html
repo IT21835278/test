@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        class Car{
+            constructor(name){
+                this.brand=name;
+            }
+
+            present(){
+                return 'I have a ' + this.brand;
+            }
+        }
+
+        class Bike{
+            constructor(name){
+                this.brand= name;
+
+            }
+            display(){
+                return ' My bike is '+this.brand;
+            }
+        }
+
+        class Model extends Car{
+            constructor(name,mod){
+                super(name);
+                this.model=mod;
+            }
+            show(){
+                return this.present()+' it is a '+this.model;
+            }
+        }
+
+        const mycar = new Car("BMD");
+        document.write(mycar.present());
+
+        const mybike =new Bike("Ninja kamazaki");
+        document.write(mybike.display())
+
+        const mycar2 = new Model("Ford","Mustang");
+        document.write(mycar2.show())
+
+    </script>
+    
+</body>
+</html>

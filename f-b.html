@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p id="demo"></p>
+    <script>
+        const VehicleOne = {
+            brand:'Ford',
+            model:'Mustang',
+            type:'car',
+            year:2021,
+            color:'red',
+            registration:{
+                city:'Houston',
+                state:'Texas',
+                country:'USA'
+            }
+        }
+
+        Myvehicle(VehicleOne)
+        function Myvehicle({model,registration:{state}}){
+            const msg ='My '+model + ' is registred in '+state+'. '
+            document.getElementById("demo").innerHTML = msg;
+        }
+
+        
+    </script>
+
+    
+</body>
+</html>
