@@ -1,0 +1,6 @@
+git init
+git add .
+git mommit -m 'message'
+git branch feature/navbar
+git branch
+git switch feature/navbar
